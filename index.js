@@ -9,7 +9,7 @@ import hotels from './routes/hotels.js';
 import rooms from './routes/rooms.js';
 
 const app = express();
-const port = 4000;
+const PORT = 4000;
 dotenv.config();
 app.use(cors());
 app.use(cookieParser());
@@ -47,7 +47,7 @@ app.use((err, req, res, next) => {
     stack: err.stack,
   });
 });
-app.listen(port, () => {
+app.listen(PORT, () => {
   connect();
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Example app listening on port ${PORT}`);
 });
