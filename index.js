@@ -9,7 +9,7 @@ import hotels from './routes/hotels.js';
 import rooms from './routes/rooms.js';
 
 const app = express();
-const PORT = 4000;
+const port = process.env.PORT || 4000;
 dotenv.config();
 app.use(cors());
 app.use(cookieParser());
