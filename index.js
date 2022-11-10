@@ -47,7 +47,7 @@ app.use((err, req, res, next) => {
     stack: err.stack,
   });
 });
-app.listen(PORT, () => {
+app.listen(port, () => {
   connect();
-  console.log(`Example app listening on port ${PORT}`);
+  console.log(`Example app listening on port ${port}`);
 });
